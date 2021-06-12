@@ -1,0 +1,114 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Знакомство с HTML тегами. Часть №3 (Формы)</title>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<form action="#" method="post" enctype="multipart/form-data">
+			<div>
+				<p>Имя*</p>
+				<input placeholder="Имя" tabindex="1" name="username" type="text" required="required"/>
+			</div>
+			<div>
+				<p>Фамилия*</p>
+				<input placeholder="Фамилия" tabindex="2" name="surname" type="text" required="required"/>
+			</div>
+			<div>
+				<p>Отчетство</p>
+				<input placeholder="Отчетство" tabindex="3" name="patronymic" type="text" />
+			</div>
+			<div>
+				<p>Пол*</p>
+				<div>
+					<input tabindex="4" checked type="radio" name="gender" value="male" required="required"/> Мужской
+				</div>
+				<div>
+					<input tabindex="5" type="radio" name="gender" value="female" required="required"/> Женский
+				</div>
+			</div>
+			<div>
+				<p>Цвет глаз</p>
+				<select tabindex="6" name="color">
+					<option value="brown">Карий</option>
+					<option value="green">Зеленый</option>
+					<option selected value="blue">Голубой</option>
+				</select>
+			</div>
+			<div>
+				<p>Дата рождения*</p>
+				<input name="example_date" type="date" required="required"/>
+			</div>
+			<div>
+				<p>Возраст</p>
+				<input name="example_range" type="range" min="18" max="100" required="required"/>
+			<div>
+				<p>Место рождения*</p>
+					<select name="user_city">
+ 					 <optgroup label="Россия">
+ 					   <option value="1">Москва</option>
+ 					   <option value="2">Санкт-Петербург</option>
+   					 <option value="3">Новосибирск</option>
+ 					 </optgroup>
+					  <optgroup label="Украина">
+					    <option value="4">Киев</option>
+					    <option value="5">Харьков</option>
+					    <option value="6">Львов</option>
+					  </optgroup>
+   					 <optgroup label="Беларусь">
+    					<option value="7">Минск</option>
+   						<option value="8">Бобруйск</option>
+ 						<option value="9">Гомель</option>
+ 					 </optgroup>
+					</select>
+			</div>
+				<p>Индекс*</p>
+				<input tabindex="7" name="index" type="tel" required="required" />
+			</div>
+			<div>
+			<p>Домашний адрес*</p>
+				<input placeholder="Домашний адрес" tabindex="8" name="homeaddress" type="text" required="required"/>
+			</div>
+			<div>
+				<p>Дата регистрации*</p>
+				<input name="dateregistration" type="date" required="required" />
+			</div>
+			<div>
+				<p>Телефон*</p>
+				<input tabindex="3" name="userphone" type="tel" required="required" />
+			</div>
+			<div>
+			<p>E-mail*</p>
+				<input placeholder="E-mail" tabindex="1" name="email" type="text" required="required"/>
+			</div>
+			<div>
+				<p>Фото первой страницы паспорта*</p>
+				<input tabindex="9" type="file" required="required" />
+			</div>
+			<div>
+				<p>От куда узнали о нашем магазине</p>
+		<select name = "secondlist" multiple> <!-- список с возможностью выбора нескольких значений -->
+			<option value = "A">Интенет</option>
+			<option value = "B">ТВ</option>
+			<option value = "C">Соцальные сети</option>
+			<option value = "D">От друзей</option>
+		</select>
+			</div>
+			<div>
+				<p>Согласие на обработку и хранение персональных данных*</p>
+				<input tabindex="10" checked="" type="checkbox" name="galka" value="no" required="required">
+			</div>
+			<div>
+				<p>Действия</p>
+				<button tabindex="11" type="submit">Отправить</button>
+				<button tabindex="12" type="reset">Очистить</button>
+			</div>
+		</form>
+	</body>
+</html>
